@@ -113,16 +113,6 @@ function Content() {
 
 
 			{/* chart started  */}
-			{/* <div className={styles.charts}>
-				<div className={styles.bar}> 
-					<h2>Sales</h2>
-					<Line data={data} width={400} height={400} />
-				</div>
-				<div className={styles.circle}>
-					<h2>Customers Arrived</h2>
-					<Doughnut data={data1} width={400} height={400} />
-				</div>
-			</div> */}
 			
 		</div>
 <div className={styles.data}>
@@ -160,6 +150,18 @@ function Content() {
 					</div>
 					</div>
 		</div>
+		<div className={styles.contentcontainer}>
+		<div className={styles.charts}>
+				<div className={styles.bar}> 
+					<h2>Sales</h2>
+					<Line data={data} width={400} height={400}  />
+				</div>
+				<div className={styles.circle}>
+					<h2>Customers Arrived</h2>
+					<Doughnut data={data1} width={400} height={400} />
+				</div>
+			</div>
+			</div>
 		</>
 	);
 }

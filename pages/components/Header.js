@@ -15,10 +15,10 @@ function Header() {
 				</div>
 				<div className={styles.profile}>
 					<input type="text"  placeholder="Search" className={styles.input}/>
-                      <Search width={10} className={styles.ProfileSearch}/>
+                      <Search width={10} className={styles.ProfileSearch} />
 					  <Dashboard width={10} />
-					  <FontAwesomeIcon icon={faBell} width={10} />
-					  <FontAwesomeIcon icon={faUser} width={10} />
+					  <FontAwesomeIcon icon={faBell} width={10} style={{cursor:"pointer"}} />
+					  <FontAwesomeIcon icon={faUser} width={10} style={{cursor:"pointer"}}  />
 
 				</div>
 			</div>
