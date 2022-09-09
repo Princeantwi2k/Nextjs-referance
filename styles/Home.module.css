@@ -243,11 +243,13 @@ width: 60%;
 .chartSecondParagragh{
   padding: 10px;
   color: rgb(100, 172, 100);
+  border-bottom: 1px solid rgb(201, 193, 193);
 }
 .chartSecondParagragh > span {
   color: gray;
 }
 .chartThirdParagragh{
+  padding: 15px;
 color: gray;
 }
 .chartThirdParagragh> span{

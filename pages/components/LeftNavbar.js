@@ -13,7 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 function LeftNavbar() {
   return (
-    <div className={styles.navcontainer}>
+    <div className={styles.navcontainer} >
       <div className={styles.logo}>
         <h2>Daylight</h2>
       </div>
