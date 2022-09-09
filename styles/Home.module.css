@@ -43,9 +43,10 @@
 }
 
 
+
 .wrapper > ul > li > a:hover{
   
-  color: black;
+  color: white;
   
   font-size: 22px;
   transition:0.2s
@@ -78,6 +79,25 @@
   color:rgb(9, 112, 72);
 }
 .profile{
+  display: flex;
+  position: absolute;
+  right: 20px;
+  gap: 13px;
+}
+.input{
+  border: none;
+  background: rgb(245,245,245);
+  border-bottom: 1px solid gray;
+}
+.ProfileSearch{
+  color: gray;
+  background-color: #fff; 
+  border-radius: 50%;
+  padding: 2px;
+  font-size: 24;
+
+}
+/* .profile{
   position: absolute;
   right:20px;
 }
@@ -86,7 +106,7 @@
   height:40px;
   border-radius: 50%;
   cursor: pointer;
-}
+} */
 
 .contentcontainer{
   display: flex;
@@ -234,23 +254,7 @@ color: gray;
 color: rgb(199, 194, 194);
 padding: 7px;
 }
-.profile{
-  display: flex;
-  
-  gap: 13px;
-}
-.input{
-  border: none;
-  background: rgb(245,245,245);
-  border-bottom: 1px solid gray;
-}
-.ProfileSearch{
-  color: gray;
-  background-color: #fff;
-  border-radius: 50%;
-  padding: 2px;
 
-}
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
