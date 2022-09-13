@@ -11,7 +11,7 @@
   cursor: pointer;
 } */
 
-.contentcontainer{
+.content{
   display: flex;
   flex-wrap: wrap;
   margin-left:227px;
@@ -23,10 +23,8 @@
   margin-top: 20px;
   gap:20px;
 }
-.tabs{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
+.tab{
+ 
   width:250px;
   height:140px;
   background-color: #fff;
@@ -35,16 +33,34 @@
   box-shadow: 3px 0px 6px 0px rgba(246, 246, 246, 0.75);
   border-bottom: 1px solid gray;
 }
-.categoriesPara{
-  display: inline;
-  position: absolute;
-  top: 215px;
- font-size: 12px;
-  padding: 8px;
-  text-align: start;
-  justify-self: start;
+.maincontent{
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+border-bottom: 1px solid rgb(201, 199, 199);
+
 }
 
+.mainpara{
+  margin-left: 20px;
+  color: red;
+}
+.mainpara > span{
+  padding: 4px;
+  font-size: 12px;
+  color: gray;
+}
+.mainpara1{
+  margin-left: 20px;
+  color: gray;
+}
+.mainpara1 > span{
+  padding: 4px;
+  font-size: 12px;
+  
+}
 .icons{
  
   color: black;
@@ -67,33 +83,33 @@ border-bottom: 1px solid rgb(201, 199, 199);
 .generalIcon{
   background-color: rgb(255, 139, 30);
   position: relative;
-bottom: 35px;
+bottom: 22px;
 right: 20px;
-padding: 25px;
+padding: 30px;
 box-shadow: 3px 0px 6px 0px rgba(65, 61, 61, 0.75);
 }
 .generalIcon1{
   background-color: rgb(0, 0, 0);
   position: relative;
-bottom: 35px;
+bottom: 22px;
 right: 20px;
-padding: 25px;
+padding: 30px;
 box-shadow: 3px 0px 6px 0px rgba(65, 61, 61, 0.75);
 }
 .generalIcon2{
   background-color: rgb(243, 33, 33);
   position: relative;
-bottom: 35px;
+bottom: 22px;
 right: 20px;
-padding: 25px;
+padding: 30px;
 box-shadow: 3px 0px 6px 0px rgba(65, 61, 61, 0.75);
 }
 .generalIcon3{
   background-color: rgb(30, 119, 221);
   position: relative;
-bottom: 35px;
+bottom: 22px;
 right: 20px;
-padding: 25px;
+padding: 30px;
 border-radius: 5px;
 box-shadow: 3px 0px 6px 0px rgba(65, 61, 61, 0.75);
 }
@@ -164,7 +180,10 @@ padding: 7px;
 @media only screen and (max-width: 768px) {
  
  
-  .contentcontainer{
+ 
+
+
+  .content{
     display: flex;
     flex-wrap: wrap;
     margin-left:100px;
@@ -178,16 +197,43 @@ padding: 7px;
     padding: 20px;
     gap:40px;
   }
-  .tabs{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  .tab{
+  
     width:250px;
     height:130px;
     background-color: #fff;
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 3px 0px 6px 0px rgba(246, 246, 246, 0.75);
+    border-bottom: 1px solid gray;
+  }
+  .maincontent{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  border-bottom: 1px solid rgb(201, 199, 199);
+  
+  }
+  
+  .mainpara{
+    margin-left: 20px;
+    color: red;
+  }
+  .mainpara > span{
+    padding: 4px;
+    font-size: 12px;
+    color: gray;
+  }
+  .mainpara1{
+    margin-left: 20px;
+    color: gray;
+  }
+  .mainpara1 > span{
+    padding: 4px;
+    font-size: 12px;
+    
   }
 
  
@@ -250,33 +296,33 @@ padding: 7px;
   .generalIcon{
     background-color: rgb(221, 122, 30);
     position: relative;
-  bottom: 45px;
+  bottom: 30px;
   right: 20px;
-  padding: 25px;
+  padding: 27px;
   box-shadow: 3px 0px 6px 0px rgba(65, 61, 61, 0.75);
   }
   .generalIcon1{
     background-color: rgb(0, 0, 0);
     position: relative;
-  bottom: 45px;
+  bottom: 30px;
   right: 20px;
-  padding: 25px;
+  padding: 27px;
   box-shadow: 3px 0px 6px 0px rgba(65, 61, 61, 0.75);
   }
   .generalIcon2{
     background-color: rgb(221, 36, 30);
     position: relative;
-  bottom: 45px;
+  bottom: 25px;
   right: 20px;
-  padding: 25px;
+  padding: 27px;
   box-shadow: 3px 0px 6px 0px rgba(65, 61, 61, 0.75);
   }
   .generalIcon3{
     background-color: rgb(30, 119, 221);
     position: relative;
-  bottom: 45px;
+  bottom: 25px;
   right: 20px;
-  padding: 25px;
+  padding: 27px;
   box-shadow: 3px 0px 6px 0px rgba(65, 61, 61, 0.75);
   }
   .icon{
@@ -295,7 +341,7 @@ padding: 7px;
     text-align: end;
     position: relative;
     left: 20px;
-    bottom: 10px;
+    bottom: 1px;
     font-size: 12px;
     color: gray;
   }
@@ -326,7 +372,7 @@ padding: 7px;
 }
 
 @media only screen and (max-width: 480px) {
-  .contentcontainer{
+  .content{
     display: flex;
     flex-wrap: wrap;
     margin-left:70px;
@@ -335,21 +381,28 @@ padding: 7px;
   
   .contentwrapper{
     display: flex;
-flex-direction: column;
+  flex-direction: column;
     margin-top: 20px;
     padding: 20px;
     gap:30px;
   }
-  .tabs{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  .tab{
+   
     width:250px;
     height:130px;
     background-color: #fff;
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 3px 0px 6px 0px rgba(246, 246, 246, 0.75);
+  }
+  .maincontent{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  border-bottom: 1px solid rgb(201, 199, 199);
+  
   }
   .data{
     display: flex;
@@ -402,33 +455,33 @@ flex-direction: column;
   .generalIcon{
     background-color: rgb(221, 122, 30);
     position: relative;
-  bottom: 45px;
+  bottom: 15px;
   right: 20px;
-  padding: 15px;
+  padding: 20px;
   box-shadow: 3px 0px 6px 0px rgba(65, 61, 61, 0.75);
   }
   .generalIcon1{
     background-color: rgb(0, 0, 0);
     position: relative;
-  bottom: 45px;
+  bottom: 15px;
   right: 20px;
-  padding: 15px;
+  padding: 20px;
   box-shadow: 3px 0px 6px 0px rgba(65, 61, 61, 0.75);
   }
   .generalIcon2{
     background-color: rgb(221, 36, 30);
     position: relative;
-  bottom: 45px;
+  bottom: 15px;
   right: 20px;
-  padding: 15px;
+  padding: 20px;
   box-shadow: 3px 0px 6px 0px rgba(65, 61, 61, 0.75);
   }
   .generalIcon3{
     background-color: rgb(30, 119, 221);
     position: relative;
-  bottom: 45px;
+  bottom: 15px;
   right: 20px;
-  padding: 15px;
+  padding: 20px;
   box-shadow: 3px 0px 6px 0px rgba(65, 61, 61, 0.75);
   }
   .icon{
@@ -447,7 +500,7 @@ flex-direction: column;
     text-align: end;
     position: relative;
     left: 20px;
-    bottom: 10px;
+    bottom: 1px;
     font-size: 12px;
     color: gray;
   }

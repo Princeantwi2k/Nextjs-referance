@@ -4,7 +4,7 @@ import Image from "next/image";
 import { FileCopy, InfoOutlined,HouseOutlined,ArrowUpward } from "@material-ui/icons";
 import { PersonOutline } from "@material-ui/icons";
 import { Box,Tabs } from "@material-ui/core";
-import { faClock, faClockFour ,faChartBar} from "@fortawesome/free-solid-svg-icons";
+import { faCalendar, faCalendarDays, faClockFour, faClockRotateLeft, faTag, faTriangleExclamation } from "@fortawesome/free-solid-svg-icons";
 import { Line } from "react-chartjs-2";
 import { Doughnut } from "react-chartjs-2";
 import 'chart.js/auto'
@@ -72,21 +72,18 @@ const data1 = {
 function Content() {
 	return (
 		<>
-		<div className={styles.contentcontainer}>
+		{/* <div className={styles.contentcontainer}>
 			<div className={styles.contentwrapper}>
 				<div className={styles.tabs}>
 					<div className={styles.categories}>
 					<p className={styles.generalIcon}> <FileCopy className={styles.icon} /></p>	
 						<p className={styles.categoriesText}>Used space <br /><span className={styles.categoriesNumber}>40/50 GB</span></p>
-						
-
-						
 					</div>
 					
 				</div>
 				<div className={styles.tabs}>
 				<div className={styles.categories}>
-					<p className={styles.generalIcon1}> <HouseOutlined className={styles.icon} /></p>	
+					<p className={styles.generalIcon1}> <HouseOutlined className={styles.icon}  /></p>	
 						<p className={styles.categoriesText}>Revenue <br /><span className={styles.categoriesNumber}>$34,254</span></p>
 
 					</div>
@@ -107,47 +104,77 @@ function Content() {
 					</div>
 				</div>
 			</div>
-
-
+			</div> */}
+     
    
+   <div className={styles.content}>
+<div className={styles.contentwrapper}>
+	<div className={styles.tab}>
+		<div className={styles.maincontent}>
+		<p className={styles.generalIcon}> <FileCopy className={styles.icon} /></p>	
+		<p className={styles.categoriesText}>Used space <br /><span className={styles.categoriesNumber}>40/50 GB</span></p>
+		</div>
+		
+		<p className={styles.mainpara}><FontAwesomeIcon icon={faTriangleExclamation} width={11} /><span>Get more space</span></p>
+	</div>
+	<div className={styles.tab}>
+		<div className={styles.maincontent}>
+		<p className={styles.generalIcon1}> <HouseOutlined className={styles.icon}  /></p>	
+		<p className={styles.categoriesText}>Revenue <br /><span className={styles.categoriesNumber}>$34,254</span></p>
+		</div>
+		
+		<p className={styles.mainpara1}><FontAwesomeIcon icon={faCalendarDays}  width={11} /> <span>Last 24 Hours</span></p>
+	</div>
+	<div className={styles.tab}>
+		<div className={styles.maincontent}>
+		<p className={styles.generalIcon2}> <InfoOutlined className={styles.icon} /></p>	
+		<p className={styles.categoriesText}>Fixed issues <br /><span className={styles.categoriesNumber}>75</span></p>
+		</div>
+		
+		<p className={styles.mainpara1}><FontAwesomeIcon icon={faTag} width={11} /><span> Tracked from Github</span></p>
+	</div>
+	<div className={styles.tab}>
+		<div className={styles.maincontent}>
+        <p className={styles.generalIcon3}> <PersonOutline className={styles.icon} /></p>	
+		<p className={styles.categoriesText}>Followers <br /><span className={styles.categoriesNumber}>+245</span></p>
+		</div>
+		
+		<p className={styles.mainpara1}> <FontAwesomeIcon icon={faClockRotateLeft} width={11} /><span>Just Updated</span></p>
+	</div>
+</div>
+
+   </div>
 		
 
 
 			{/* chart started  */}
 			
-		</div>
-<div className={styles.data}>
+		
+      <div className={styles.data}>
 		<div className={styles.datawrapper}>
 			<div className={styles.dataChart}>
 				<div className={styles.Image}>
 				<Image src={pic} width={400} height={200}  className={styles.Image} alt="the chart"/> 
 				</div>
-	
 						<p className={styles.chartParagragh} >Daily Sales</p>
 						<p className={styles.chartSecondParagragh}> <ArrowUpward /> 55% <span >increse in today sales.</span> </p>
-						
 						<p className={styles.chartThirdParagragh} > <span><FontAwesomeIcon icon={faClockFour} width={11} /></span> updated 4 minutes ago </p>
-						
 					</div>
 			<div className={styles.dataChart}>
 			<div className={styles.Image}>
 				<Image src={pic1} width={400} height={200}  className={styles.Image} alt="the chart"/> 
 				</div>
-						<p className={styles.chartParagragh} >Email Subscriptions</p>
+		            	<p className={styles.chartParagragh} >Email Subscriptions</p>
 						<p className={styles.chartSecondParagragh}>  Last Campaign Performance</p>
-						
-						<p className={styles.chartThirdParagragh} > <span><FontAwesomeIcon icon={faClockFour} width={11} /></span> campaign sent 2 days ago </p>
-						
+						<p className={styles.chartThirdParagragh} > <span><FontAwesomeIcon icon={faClockFour} width={11} /></span> campaign sent 2 days ago </p>	
 					</div>
 			<div className={styles.dataChart}>
 			<div className={styles.Image}>
 				<Image src={pic2} width={400} height={200}  className={styles.Image} alt="the chart"/> 
 				</div>
-						<p className={styles.chartParagragh} >Completed Tasks</p>
-						<p className={styles.chartSecondParagragh}> Last Campaign Performance</p>
-						
+	                	<p className={styles.chartParagragh} >Completed Tasks</p>
+						<p className={styles.chartSecondParagragh}> Last Campaign Performance</p>	
 						<p className={styles.chartThirdParagragh} > <span><FontAwesomeIcon icon={faClockFour} width={11} /></span> campaign sent 2 days ago </p>
-						
 					</div>
 					</div>
 		</div>
