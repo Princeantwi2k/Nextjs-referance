@@ -1,0 +1,348 @@
+.table{
+   
+    width: 35vw;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 3px 0px 6px 0px rgba(246, 246, 246, 0.75);
+    border-radius: 10px;
+}
+.tablelight{
+   
+    background-color: orange;
+    position: relative;
+    bottom: 30px;
+    right: 10px;
+    left: 5px;
+    padding: 20px;
+    box-shadow: 3px 0px 6px 0px rgba(65, 61, 61, 0.75);
+    color: white;
+}
+.tablelight >span {
+    color: rgb(211, 211, 211)
+}
+.tablehead{
+  
+    padding-top: 10px;
+    color: orange;
+    font-size: 14px;
+   
+}
+.tablehead1{
+    padding-top: 10px;
+    color: orange;
+    font-size: 14px;
+    padding-left: 80px;
+  
+}
+.tablebody{
+   
+    font-size: 12px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 80px;
+    border-bottom: 1px solid rgb(228, 223, 223);
+}
+.Lefttable{
+    width: 35vw;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 3px 0px 6px 0px rgba(246, 246, 246, 0.75);
+    border-radius: 10px;
+    margin-left: 120px;
+}
+.Lefttablelight{
+   
+    background-color: rgb(12, 12, 12);
+    position: relative;
+    bottom: 30px;
+    right: 10px;
+    left: 5px;
+    padding: 20px;
+    box-shadow: 3px 0px 6px 0px rgba(65, 61, 61, 0.75);
+    color: white;
+}
+.Lefttablebody{
+   
+    font-size: 12px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 30px;
+    border-bottom: 1px solid rgb(228, 223, 223);
+}
+.tablebodyIcon{
+ display: flex;
+ gap: 10px;
+    font-size: 12px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 40px;
+    color: rgb(134, 33, 134);
+    border-bottom: 1px solid rgb(228, 223, 223);
+    cursor: pointer;
+}
+.tablebodyIcon > span {
+    color: red;
+}
+
+.LeftTableHeader{
+    display: flex;
+    flex-wrap: wrap;
+}
+.LeftTableHeader > ul {
+    display: flex;
+    gap: 50px;
+    padding-left: 20px;
+}
+
+.LeftTableHeader > ul > li {
+  
+    list-style: none;
+   
+}
+
+.LeftTableHeader > ul > li >span {
+    margin: 5px;
+}
+.LeftTableHeader > ul > li:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    height: 20px;
+  
+}
+
+@media only screen and (max-width: 768px) { 
+    .table{
+   
+        width: 79vw;
+        background-color: white;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 3px 0px 6px 0px rgba(246, 246, 246, 0.75);
+        border-radius: 10px;
+    }
+    .tablelight{
+       
+        background-color: orange;
+        position: relative;
+        bottom: 30px;
+        right: 10px;
+        left: 5px;
+        padding: 20px;
+        box-shadow: 3px 0px 6px 0px rgba(65, 61, 61, 0.75);
+        color: white;
+    }
+    .tablelight >span {
+        color: rgb(211, 211, 211)
+    }
+    .tablehead{
+      
+        padding-top: 10px;
+        color: orange;
+        font-size: 14px;
+       
+    }
+    .tablehead1{
+        padding-top: 10px;
+        color: orange;
+        font-size: 14px;
+        padding-left: 80px;
+      
+    }
+    .tablebody{
+       
+        font-size: 12px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 80px;
+        border-bottom: 1px solid rgb(228, 223, 223);
+    }
+    .Lefttable{
+        width: 75vw;
+        background-color: white;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 3px 0px 6px 0px rgba(246, 246, 246, 0.75);
+        border-radius: 10px;
+        margin-left: 30px;
+    }
+    .Lefttablelight{
+       
+        background-color: rgb(12, 12, 12);
+        position: relative;
+        bottom: 30px;
+        right: 10px;
+        left: 5px;
+        padding: 20px;
+        box-shadow: 3px 0px 6px 0px rgba(65, 61, 61, 0.75);
+        color: white;
+    }
+    .Lefttablebody{
+       
+        font-size: 12px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 30px;
+        border-bottom: 1px solid rgb(228, 223, 223);
+    }
+    .tablebodyIcon{
+     display: flex;
+     gap: 10px;
+        font-size: 12px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 40px;
+        color: rgb(134, 33, 134);
+        border-bottom: 1px solid rgb(228, 223, 223);
+        cursor: pointer;
+    }
+    .tablebodyIcon > span {
+        color: red;
+    }
+    
+    .LeftTableHeader{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .LeftTableHeader > ul {
+        display: flex;
+        gap: 50px;
+        padding-left: 20px;
+    }
+    
+    .LeftTableHeader > ul > li {
+      
+        list-style: none;
+       
+    }
+    
+    .LeftTableHeader > ul > li >span {
+        margin: 5px;
+    }
+    .LeftTableHeader > ul > li:hover{
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        height: 20px;
+      
+    }
+ }
+ @media screen and (max-width:480px) {
+    .table{
+   
+        width: 60vw;
+        background-color: white;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 3px 0px 6px 0px rgba(246, 246, 246, 0.75);
+        border-radius: 10px;
+    }
+    .tablelight{
+       
+        background-color: orange;
+        position: relative;
+        bottom: 30px;
+        right: 10px;
+        left: 5px;
+        padding: 20px;
+        box-shadow: 3px 0px 6px 0px rgba(65, 61, 61, 0.75);
+        color: white;
+    }
+    .tablelight >span {
+        color: rgb(211, 211, 211);
+        font-size: 11px;
+    }
+    .tablehead{
+      
+        padding-top: 10px;
+        color: orange;
+        font-size: 14px;
+       
+    }
+    .tablehead1{
+        padding-top: 10px;
+        color: orange;
+        font-size: 14px;
+        padding-left: 10px;
+      
+    }
+    .tablebody{
+       
+        font-size: 12px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 8px;
+        border-bottom: 1px solid rgb(228, 223, 223);
+    }
+    .Lefttable{
+        width: 60vw;
+        background-color: white;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 3px 0px 6px 0px rgba(246, 246, 246, 0.75);
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+    .Lefttablelight{
+       
+        background-color: rgb(12, 12, 12);
+        position: relative;
+        bottom: 30px;
+        right: 10px;
+        left: 5px;
+        padding: 10px;
+        box-shadow: 3px 0px 6px 0px rgba(65, 61, 61, 0.75);
+        color: white;
+    }
+    .Lefttablebody{
+       
+        font-size: 12px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 30px;
+        border-bottom: 1px solid rgb(228, 223, 223);
+    }
+    .tablebodyIcon{
+     display: flex;
+     gap: 10px;
+        font-size: 12px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 40px;
+        color: rgb(134, 33, 134);
+        border-bottom: 1px solid rgb(228, 223, 223);
+        cursor: pointer;
+    }
+    .tablebodyIcon > span {
+        color: red;
+    }
+    
+    .LeftTableHeader{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .LeftTableHeader > ul {
+        display: flex;
+        gap: 50px;
+        padding-left: 20px;
+    }
+    
+    .LeftTableHeader > ul > li {
+    font-size: 11px;
+        list-style: none;
+       
+    }
+    
+    .LeftTableHeader > ul > li >span {
+        margin: 5px;
+    }
+    .LeftTableHeader > ul > li:hover{
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        height: 20px;
+      
+    }
+ }
